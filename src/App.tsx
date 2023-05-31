@@ -1,4 +1,5 @@
 import React from 'react';
+import { InvisibleSmartCaptcha } from '@yandex/smart-captcha';
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +19,12 @@ function App() {
         >
           Learn React
         </a>
+        <InvisibleSmartCaptcha
+        sitekey="U7bnwGLbYiElqryaP1Qq714dW2BmcwsexmmZriSg"
+        visible={true}
+        onSuccess={console.log}
+        test={true}
+      />
       </header>
     </div>
   );

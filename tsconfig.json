@@ -1,26 +1,37 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+	"compileOnSave": false,
+	"compilerOptions": {
+			"esModuleInterop": true,
+			"baseUrl": ".",
+			"lib": [
+					"dom",
+					"es2015",
+					"es2016"
+			],
+			"allowSyntheticDefaultImports": true,
+			"experimentalDecorators": true,
+			"jsx": "react",
+			"target": "es2017",
+			"strict": false,
+			"paths": {
+				// paths
+			},
+			"module": "esnext",
+			// Единственное изменение
+			"moduleResolution": "nodenext",
+			"noUnusedLocals": false,
+			"noUnusedParameters": false,
+			"removeComments": false,
+			"preserveConstEnums": true,
+			"resolveJsonModule": true,
+			"sourceMap": true,
+			"allowJs": true,
+	},
+	"include": [
+			"__interfaces__",
+			"src/**/*.ts",
+			"src/**/*.tsx",
+			"custom.d.ts"
+	],
+	"exclude": ["./node_modules/*"]
 }
